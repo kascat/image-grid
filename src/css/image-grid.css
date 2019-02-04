@@ -1,0 +1,17 @@
+.img-grid {
+    width: 100%;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    transition: opacity 0.3s;
+}
+.img-grid:hover {
+    opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+    transition: opacity 0.3s;
+}
+.img-grid-columns {
+    float: left;
+}
+.img-grid-col {
+    padding: 1px;
+}

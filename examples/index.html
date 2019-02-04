@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Magic Image Grid</title>
+
+  <style>
+    .clearfix::after, .clearfix::before {
+      content: "";
+      display: table;
+    }
+    .clearfix::after {
+      clear: both;
+    }
+  </style>
+
+  <link rel="stylesheet" href="../src/css/image-grid.css">
+  <script src="../src/js/image-grid.js"></script>
+</head>
+
+<body>
+<div>
+  <div class="clearfix"
+       style="border: #999 2px solid; border-radius: 4px;
+                box-shadow: 3px 5px 5px #666; width: 70%;
+                margin: auto; padding: 5px">
+    <h3 style="text-align: center;">Magic Image Grid</h3>
+    <div id="block-images"></div>
+  </div>
+</div>
+  <script>
+      var images = [
+          'https://www.designerd.com.br/wp-content/uploads/2016/09/imagens-e-textos-no-photoshop-exemplo.jpg',
+          'https://i.pinimg.com/236x/6e/cc/e5/6ecce52666fa6b4f0e0a7bd1926c2744.jpg',
+          'https://static.imagemwhats.com.br/content/assetz/uploads/2017/06/as-melhores-imagens-de-paz.jpg',
+          'http://www.fundosanimais.com/1920x1080/imagens-tigres.jpg',
+          'https://cdn.cinepop.com.br/2016/08/darthvader_1-750x380.jpg',
+          'http://cdn5.oqueeoquee.com/wp-content/uploads/2013/07/casal-ou-caveira.jpg',
+          'https://image.freepik.com/vetores-gratis/caveira-dourada-em-fundo-escuro_27088-119.jpg',
+          'https://villetarget.com/blog/wp-content/uploads/2018/05/SEO-para-imagens-qualidade.jpg',
+          'https://mundocogumelo.blog.br/wp-content/uploads/2016/12/Screenshot-48-1024x536.jpg',
+          'https://ferramentasblog.com/wordpress/wp-content/uploads/2011/01/gato.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSw4lj3wD49KmIOjldivx5T03EnLPnrkGvmJZZrRevNLZ-SLX4SQ',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQqHK3WncHmmYRMTLoD5tGKNLYq7y7qLxaMPunztmKm3Pkx86Efw',
+          'https://www.londonbeep.com/wp-content/uploads/2014/04/london_eye_pictures_at_night_1.jpg',
+          'https://cdn2.stylecraze.com/wp-content/uploads/2014/01/3684-Top-15-Most-Beautiful-Rose-Flowers-ss.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5-uVknkbSOYVSZWCxAUwqs1Lh7NUzWo2pJLmw-d3I7iSe1oP_',
+          'https://img.freepik.com/vetores-gratis/silhueta-mesquita-no-ceu-nocturno-com-a-lua-crescente-ea-estrela_1017-2865.jpg?size=338&ext=jpg',
+          'https://iso.500px.com/wp-content/uploads/2016/01/bestof.jpg',
+          'https://www.freegreatpicture.com/files/photo99/49442-beautiful-hd-wallpaper.jpg',
+          'https://www.infoescola.com/wp-content/uploads/2008/05/cavalo-774691342.jpg',
+          'https://jooinn.com/images/beautiful-1.jpg',
+      ];
+
+      ImageGrid.makeGrid(document.getElementById('block-images'), images, 5);
+  </script>
+</body>
+</html>
